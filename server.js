@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const users = [{ username: "admin", passwordHash: bcrypt.hashSync("yourSecurePassword", 10) }];
+const users = [{ username: "admin", passwordHash: bcrypt.hashSync("6736", 10) }];
 
 app.post("/login", async (req, res) => {
   const { username, password } = req.body;
